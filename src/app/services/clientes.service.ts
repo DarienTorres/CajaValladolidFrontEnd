@@ -25,11 +25,11 @@ export class ClientesService {
     return this.http.get('http://localhost:3000/cajavalladolid/${idClienteCuenta}');
   }
 
-  deleteCliente(idClienteCuenta:String){
-    return this.http.delete('http://localhost:3000/cajavalladolid/${idClienteCuenta}');
+  deleteCliente(id:String){
+    return this.http.delete('http://localhost:3000/cajavalladolid/clientes/list/${id}');
   }
 
-  saveCliente(cliente:cajavalladolid){
+  saveCliente(cliente:cajavalladolid2){
     return this.http.post('http://localhost:3000/cajavalladolid',cliente);
   }
 

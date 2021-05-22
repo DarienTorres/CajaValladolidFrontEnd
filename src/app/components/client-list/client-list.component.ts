@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import {ClientesService } from '../../services/clientes.service';
 @Component({
   selector: 'app-client-list',
@@ -6,7 +6,7 @@ import {ClientesService } from '../../services/clientes.service';
   styleUrls: ['./client-list.component.css']
 })
 export class ClientListComponent implements OnInit {
-
+@HostBinding('class') classes='row';
 clients:any=[];
 
   constructor(private clientesService:ClientesService) { }
