@@ -1,0 +1,43 @@
+<div class="col-md-4" *ngFor="let client of clients">
+<div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+       cliente cuenta
+        
+        <button class="btn btn-danger">
+            <i class="far fa-trash-alt">
+
+            </i>
+        </button>
+    </div>
+    <div class="card-body alig">
+        <p>
+           ID Cliente Cuenta: {{client.idClienteCuenta}}
+        </p>
+        <p>
+          ID Cliente:  {{client.idCliente}}
+        </p>
+        <p>
+         ID Cuenta:   {{client.idCuenta}}
+        </p>
+        <p>
+          Saldo Actual:  {{client.saldoActual}}
+        </p>
+        <p>
+          Fecha de Contratación:  {{client.fechaContratacion}}
+        </p>
+        <p>
+        Fecha último movimiento:    {{client.fechaUltimoMovimiento}}
+        </p>
+        
+       
+       
+        
+        
+       
+
+        <a href="" class="btn btn-info btn-block">Editar</a>
+    </div>
+</div>
+
+
+</div>
